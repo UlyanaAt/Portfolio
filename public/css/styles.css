@@ -1,0 +1,244 @@
+  body {
+    margin: 0;
+    background-color: #E3C5A5;  
+    font-family: 'Vollkorn', serif;  
+    color: #1a1b1b; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .contacts {
+    background-color: #f3e4d5; 
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Занимает всю высоту экрана */
+}
+
+header {
+    font-family: 'Unica One', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #E3C5A5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: #000;
+    font-size: 18px;
+}
+
+main {
+    flex: 1; /* Основной контент занимает оставшееся пространство */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 150px 0 40px; /* Отступ сверху для хедера и снизу для футера */
+}
+
+.footer {
+    background-color: #f3e4d5;
+    color: #151515;
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px; /* Внутренний отступ слева и справа */
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000; /* Черный цвет текста */
+    font-size: 18px; /* Размер шрифта */
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #555; /* Цвет при наведении */
+  }
+
+  a {
+    text-decoration: none;
+    color: #e2a25d; /* Черный цвет текста */
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #555; /* Цвет при наведении */
+  }
+
+  .menu {
+    display: flex;
+    gap: 40px; /* Расстояние между ссылками */
+    padding-left: 20px;
+  }
+
+.footer .email {
+    font-size: calc(12px + 2 * (100vw - 320px) / 880);
+    padding-left: 20px;
+    flex: 10;
+    font-family: 'Unica One', sans-serif;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+    flex: 1;
+}
+
+.footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.footer .social-icons img:hover {
+    opacity: 0.7;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .text-section h2 {
+    font-family: 'Unica One', sans-serif; /* Unica One font for heading */
+    color: #b04a3e; /* Reddish color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-family: 'Unica One', sans-serif; /* Unica One font for heading */
+    color: #b04a3e; /* Reddish color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .contacts td {
+    padding-right: 40px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .projects-container td {
+    padding-bottom: 10px;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-section img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.project-card {
+    width: 320px;
+    height: 320px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; 
+    background-color: #f3e4d5;
+}
+
+  /* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Вертикальное расположение */
+    }
+
+    .text-section,
+    .image-section {
+        width: 100%; /* Занимает всю ширину экрана */
+    }
+
+    .image-section {
+        order: -1; /* Перемещаем изображение вверх */
+        margin-bottom: 20px; /* Отступ снизу */
+    }
+
+    .text-section {
+        padding-right: 0; /* Убираем правый отступ */
+    }
+
+    nav {
+        font-size: calc(14px + 2 * (100vw - 320px) / 880);
+    }
+
+    nav a {
+        font-size: calc(14px + 2 * (100vw - 320px) / 880);
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 1244px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .contacts td {
+        font-size: calc(12px + 2 * (100vw - 320px) / 880);
+    }
+    .project-card {
+        width: 80%; /* Уменьшаем ширину карточек до 80% */
+        height: auto; /* Высота будет динамически подстраиваться под содержимое */
+        font-size: calc(12px + 2 * (100vw - 320px) / 880); /* Уменьшаем размер шрифта */
+        padding: 5px; /* Уменьшаем отступы */
+    }
+
+    table {
+        font-size: calc(12px + 2 * (100vw - 320px) / 880); /* Уменьшаем размер шрифта в таблицах */
+    }
+
+    nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

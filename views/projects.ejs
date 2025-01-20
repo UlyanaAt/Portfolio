@@ -1,0 +1,38 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Vollkorn&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<body class="container">
+    <%- include('./partials/header.ejs'); %>
+    
+    <main>
+        <div class="projects-container">
+            <% projects.forEach(project => { %>
+                <div class="project-card">
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><%= project.name %></td>
+                        </tr>
+                        <tr>
+                            <td>About Project:</td>
+                            <td><%= project.description %></td>
+                        </tr>
+                        <tr>
+                            <td>Link:</td>
+                            <td><a href="<%= project.link %>" target="_blank">View Project</a></td>
+                        </tr>
+                    </table>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+    
+    <%- include('./partials/footer.ejs'); %>
+</body>
+</html>

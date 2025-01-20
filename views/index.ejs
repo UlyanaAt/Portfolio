@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Vollkorn&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body class="container">
+    <%- include('./partials/header.ejs'); %> <!-- Подключаем header -->
+    <main>
+        <div class="text-section">
+            <h2>about me</h2>
+            <p>
+              My name is Ulyana, I study and work in Tomsk city as a UX/UI designer. My passion for design began with a desire to improve user experience and make technology more accessible to everyone. I truly think that good design is as much about functionality as it is about aesthetics.
+            </p>
+            <p>
+              I constantly strive to educate myself on new technologies and design trends. My goal is to create interfaces that are highly usable and efficient in use with a product’s style and objectives. I am open to new projects and always ready to cooperate!
+            </p>
+          </div>
+          <div class="image-section">
+            <img src="/images/me.jpg" alt="A scenery image">
+          </div>
+    </main>
+    <%- include('./partials/footer.ejs'); %> <!-- Подключаем footer -->
+</body>
+</html>

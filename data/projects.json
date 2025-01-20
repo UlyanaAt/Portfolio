@@ -1,0 +1,17 @@
+[
+ {
+    "name": "Window application written in Qt Creator",
+    "description": "The application draws a flight graph of the object with specified characteristics (Weight, angle, speed...)",
+    "link": "https://github.com/UlyanaAt/QtWindowApp"
+ },
+ {
+    "name": "Window application written with Windows forms",
+    "description": "The application draws a graph that simulates wheather changes",
+    "link": "https://github.com/UlyanaAt/WeatherSimulation"
+ },
+ {
+    "name": "Window application written with Windows forms",
+    "description": "The application simulates prediction orb, using random",
+    "link": "https://github.com/UlyanaAt/PredictionsOrb"
+ }
+]
